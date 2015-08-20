@@ -1,0 +1,128 @@
+/** * {
+	border: 1px solid chocolate; 
+} **/
+
+body {
+	background-color 		:black;
+	font-family 	 		:'roboto', 'sans-serif';
+	color 			 		:white;
+	-webkit-font-smoothing 	:antialiased;
+	letter-spacing 			:0.15em;
+
+}
+
+/***************
+Top NAV
+***************/
+
+.content {
+	width 					:80em;
+	margin 					:0 auto;
+	min-width 				:30em;
+}
+
+.top-nav {
+	text-align 				:center;
+}
+
+
+/****************
+Form Style
+*****************/
+
+/*Input Text Box*/
+
+form {
+	text-align 				:center;
+}
+
+.textBox {
+	padding 				:.5em;
+	width 					:30em;
+	height 					:1.5em;
+	font-size 				:2em;
+	color 					:#282828;
+	text-align 				:left;
+	background-color 		:white;
+}
+
+input {
+	font-family 			:'roboto', sans-serif;
+	font-weight 			:500;
+}
+
+input:focus {
+	outline 				:none;
+}
+
+/*List Style*/
+
+#list {
+	position 				:relative;
+	list-style 		 		:none;
+	width 					:68.5em;
+	height 					:30em;
+}
+
+#list li {
+	position 				:relative;
+	background-color 		:#3399ff;
+	width: 					:990px;
+	height 					:60px;
+	margin-left 			:6.5em;
+}
+
+#list li:nth-child(even) {
+	background-color 		:#ff9900;
+}
+
+/*span with class item*/
+
+.item {
+	position 				:absolute;
+	font-size 				:2em;
+	line-height 			:2em;
+	padding-left 			:0.8em;
+}
+
+
+/*Delete icon using div*/
+.delete {
+	position 				:absolute;
+	right 					:0;
+	background 				:url('../images/delete102.png') no-repeat 10px;
+	width 					:60px;
+	height 					:60px;
+	display 				:inline-block;
+	cursor 					:pointer;
+}
+
+/*Checked off list item style*/
+
+.checked span.item {
+	text-decoration  		:line-through;
+	font-style 				:italic;
+}
+
+/*************************************
+	Media Queries for responsiveness
+
+**************************************/
+
+@media only screen and (max-width: 500px) {
+	
+	.content {
+		font-size:  .5em;
+		width:5em;
+	}
+
+	form {
+		width:5em;
+	}
+
+	#list {
+		width: 10em;
+	}
+
+
+}
